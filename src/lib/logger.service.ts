@@ -148,7 +148,7 @@ export class NGXLogger {
     // only use validated parameters for HTTP requests
     const validatedAdditionalParameters = NGXLoggerUtils.prepareAdditionalParameters(additional);
 
-    const timestamp = new Date().toISOString();
+    const timestamp = new Date().toString();
 
     const callerDetails = NGXLoggerUtils.getCallerDetails();
 
